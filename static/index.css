@@ -17,6 +17,11 @@ p {
 	font: 24px/24px Segoe UI Light, "Arial", sans-serif;
 }
 
+.login {
+	text-align: center;
+	padding-top: 10%;
+}
+
 .overlay {
     opacity:0.9;
     background-color:black;
