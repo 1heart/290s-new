@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Art Overflow - Home</title>
+    <title>Art Overflow - New Question</title>
 
     <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -22,39 +22,22 @@
 
   <body>
 
+      <div class="page-container">
+      <div class="question-container" id="glow">
+          <form method="post">
+              <h2>Post a new question!</h2>
+              <p>Title:</p><input type="text" name="title">
+              <p>Description:</p><textarea cols="40" rows="5" name="description"></textarea>
+              <p>Question asker's name:</p><input type="text" name="user">
+              <p>Soundcloud Link:</p><input type="text" name="link">
+              <br><br><input type="submit" value="Go" class="plain">
+
+          </form>
 
 
-    <div class="page-container">
-        {% for id in users %}
 
-        <div class="question-container" id="glow">
-                  <div class="prof-container">
-                  <img style="width:64px;height:64px" class="prof-container" src="static/img/profile.jpg">
-                  <p>{{users[id].user}}</p>
-
-
-                  <h3>{{users[id].upvotes}}</h3>
-                      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
-                      </button>
-
-                      <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                      </button>
-                  </div>
-
-              <h2>{{users[id].title}}</h2>
-                <p>{{ users[id].description}}</p>
-
-        </div>
-
-        {% endfor %}
-
-    
-
-    </div>
-
-
+      </div>
+      </div>
 
 
 
