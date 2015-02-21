@@ -1,9 +1,5 @@
 # Virtualenv
-.Python
-bin
-lib
-include
-Scripts
+venv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
