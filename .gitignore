@@ -3,6 +3,7 @@
 bin
 lib
 include
+Scripts
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
