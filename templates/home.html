@@ -42,10 +42,10 @@
                         <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                       </button>
                   </div>
-
               <h2>{{users[id].title}}</h2>
                 <p>{{ users[id].description}}</p>
-
+                <object width="148" height="44"><param name="movie" value={{ users[id].soundcloudLink}}></param>
+                <param name="wmode" value="transparent"></param><embed src={{ users[id].soundcloudLink}} width="148" height="44" wmode="transparent" type="application/x-shockwave-flash"></embed></object><br>
         </div>
 
         {% endfor %}
