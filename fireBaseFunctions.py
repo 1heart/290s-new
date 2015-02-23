@@ -18,5 +18,6 @@ def getQuestions():
 	result = firebase.get('/questions', None)
 	for key in result:
 		result[key]['soundcloudLink'] = "http://vocaroo.com/player.swf?playMediaID=" + (result[key]['soundcloudLink'])[21:] + "&autoplay=0"
+		# result[key]['soundcloudLink'] = "vocaroo.com/player.swf?playMediaID=" + (result[key]['soundcloudLink'])[21:] + "&autoplay=0"
 	return result
 	# return list(result.values())

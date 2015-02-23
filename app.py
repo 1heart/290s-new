@@ -15,7 +15,6 @@ def index():
 @app.route('/newQuestion', methods=['GET', 'POST'])
 def newQuestion():
 	if request.method == 'POST':
-		print(request.form['title'])
 		sentQuestion = fireBaseFunctions.postQuestion(\
 			title=request.form['title'],
 			description=request.form['description'],
@@ -25,3 +24,17 @@ def newQuestion():
 		return redirect("/home")
 	# else:
 	return render_template('newQuestion.html')
+
+
+@app.route('/html5question', methods=['GET', 'POST'])
+def html5question():
+	if request.method == 'POST':
+		sentQuestion = fireBaseFunctions.postQuestion(\
+			title=request.form['title'],
+			description=request.form['description'],
+			upvotes=0,
+			user=request.form['user'],
+			soundcloudLink=request.form['link'])
+		return redirect("/home")
+	# else:
+	return render_template('html5question.html')
